@@ -1,17 +1,4 @@
 /* ------  CSS reset -------- */
-:root {
-  --primary-color: #22d3ee;    
-  --secondary-color: #a78bfa;
-  --font-color: #222;        
-  --background-color: #f0e2e2; 
-
-.dark-mode {
-  --primary-color: #38bdf8;      
-  --secondary-color: #facc15; 
-  --font-color: #e5e7eb;     
-  --background-color: #020617;   
-}
-
 html,
 body,
 div,
@@ -96,8 +83,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   text-decoration: none;
 }
@@ -137,5 +122,92 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /* ------  CSS reset end -------- */
+
+/* Shared CSS Style */
+:root {
+  --primary-color: #22d3ee;    
+  --secondary-color: #a78bfa;
+  --font-color: #222;        
+  --background-color: #f0e2e2; 
+}
+
+.dark-mode {
+  --primary-color: #38bdf8;      
+  --secondary-color: #facc15; 
+  --font-color: #e5e7eb;     
+  --background-color: #020617;   
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 100px 15px;
+    padding: 0 15px;
+}
+
+.btn-button{
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding: 7px 12px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-button:hover{
+    background-color: var(--secondary-color);
+}
+
+/* Shared CSS Style End */
+
+/* Header Section Styles */
+.header-container {
+    margin: 50px 15px 0;
+    padding: 0 15px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content h1 {
+    color: var(--font-color);
+    font-size: 2rem;
+}
+
+.header-content h1 span {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul.navbar-menu li a{
+    color: var(--font-color);
+    font-size: 1.1rem;
+    padding: 7px 12px;
+}
+
+nav ul.navbar-menu li a:hover{
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
