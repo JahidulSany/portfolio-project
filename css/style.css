@@ -1,85 +1,5 @@
 /* ------  CSS reset -------- */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -115,25 +35,21 @@ q:after {
   content: '';
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 /* ------  CSS reset end -------- */
 
 /* Shared CSS Style */
 :root {
-  --primary-color: #22d3ee;
-  --secondary-color: #a78bfa;
+  --primary-color: #a78bfa;
+  --secondary-color: #10c39b;
   --font-color: #222;
   --background-color: #f0e2e2;
 }
 
 .dark-mode {
-  --primary-color: #38bdf8;
-  --secondary-color: #facc15;
-  --font-color: #e5e7eb;
-  --background-color: #020617;
+  --primary-color: #10c39b;
+  --secondary-color: #a78bfa;
+  --font-color: #f0e2e2;
+  --background-color: #222;
 }
 
 html {
@@ -146,13 +62,19 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+p {
+  line-height: 1.5;
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
 .container {
   margin: 120px auto;
   padding: 0 15px;
 }
 
 .container-width {
-  width: 1280px;
+  width: 1140px;
   margin: 120px auto;
   padding: 0 15px;
 }
@@ -189,6 +111,7 @@ body {
 }
 
 .section-header {
+  text-transform: capitalize;
   font-size: 2.5rem;
   text-align: center;
   font-weight: 800;
@@ -196,9 +119,13 @@ body {
   margin: 50px 0;
 }
 
-/* Shared CSS Style End */
+.unique-span {
+  color: var(--primary-color);
+  font-size: 1.3em;
+}
 
 /* Header Section Styles */
+
 .header-container {
   border-radius: 10px;
   position: sticky;
@@ -217,12 +144,8 @@ body {
   font-size: 2rem;
 }
 
-.header-content h3 span {
-  color: var(--secondary-color);
-  font-size: 1.3em;
-}
-
 header nav {
+  z-index: 10;
   display: flex;
   gap: 15px;
 }
@@ -234,25 +157,26 @@ header nav ul {
 }
 
 nav ul.navbar-menu li a {
-  color: var(--font-color);
+  font-weight: bold;
+  color: #fff;
   padding: 15px 25px;
   font-size: 1.1rem;
 }
 
 nav ul.navbar-menu li a:hover {
-  color: var(--secondary-color);
+  color: var(--font-color);
   transition: all 0.3s ease-in;
 }
 
-/* Header Styles End */
-
 /* About Section */
+
 .about-bg-images {
   background-image: url(../images/developer.png), url(../images/header_bg.png);
   background-repeat: no-repeat;
   background-position: left bottom, bottom right;
   background-size: contain;
 }
+
 .about-content {
   display: flex;
   align-items: center;
@@ -278,12 +202,9 @@ nav ul.navbar-menu li a:hover {
 }
 
 .about-details p.about-desc {
-  font-weight: 400;
-  color: var(--font-color);
+  width: 520px;
   margin-bottom: 20px;
-  line-height: 1.4rem;
 }
-/* About Section Styles End */
 
 /* Projects Section */
 .projects-container {
@@ -292,7 +213,7 @@ nav ul.navbar-menu li a:hover {
 }
 
 .project {
-  background-color: white;
+  background-color: var(--background-color);
   padding: 30px;
   margin: 30px;
   transition: all 0.3s ease-in;
@@ -330,11 +251,11 @@ nav ul.navbar-menu li a:hover {
   text-transform: capitalize;
 }
 
-.project-desc {
+p.project-desc {
   max-width: 450px;
 }
 
-.project-details{
+.project-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -381,7 +302,58 @@ ul.project-techstack li a img {
   color: var(--secondary-color);
 }
 
-/* Projects Section Ends */
+/* Contact Section */
+.contact-form {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.contact-title {
+  margin: 30px 0;
+  font-size: 2rem;
+  color: var(--font-color);
+}
+
+.contact-desc {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+.direct-contact-desc {
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+a.contact-links {
+  color: var(--font-color);
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+}
+
+a.contact-links:hover {
+  color: var(--secondary-color);
+}
+
+label {
+  font-size: 1.1rem;
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 450px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: var(--font-color);
+  font-weight: 500;
+}
 
 /* Footer Section */
 .footer-container {
@@ -391,5 +363,5 @@ ul.project-techstack li a img {
 
 .footer-container p {
   text-align: center;
+  font-size: 1.1rem;
 }
-/* Footer Section End*/
