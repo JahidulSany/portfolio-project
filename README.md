@@ -9,7 +9,7 @@ Welcome to the source code for my personal portfolio website — a professional 
 
 ## 📌 About
 
-This project is my personal portfolio website built using **HTML5**, **CSS3**, and modern web design principles. It’s designed to be **responsive**, **clean**, and **user-friendly**, giving visitors a high-level view of my development skills, recent projects, and how to contact me.  [oai_citation:0‡jahidulsany.github.io](https://jahidulsany.github.io/portfolio-project/)
+This project is my personal portfolio website built using **HTML5**, **CSS3**, and modern web design principles. It’s designed to be **responsive**, **clean**, and **user-friendly**, giving visitors a high-level view of my development skills, recent projects, and how to contact me.
 
 My goal with this portfolio is to provide an engaging online presence that strengthens my professional profile and helps potential collaborators or employers discover my work.
 
@@ -21,7 +21,7 @@ My goal with this portfolio is to provide an engaging online presence that stren
 ✔️ Clear navigation — About, Projects, Contact sections  
 ✔️ Highlights key projects with technologies used  
 ✔️ Contact form and direct contact details for business inquiries  
-✔️ Clean and modern UI with focus on readability and accessibility  [oai_citation:1‡jahidulsany.github.io](https://jahidulsany.github.io/portfolio-project/)
+✔️ Clean and modern UI with focus on readability and accessibility
 
 ---
 
@@ -32,7 +32,7 @@ My goal with this portfolio is to provide an engaging online presence that stren
 | HTML5     |  
 | CSS3      |  
 
-No JavaScript frameworks or build tools — this site is purposefully simple and lightweight for fast loading and easy deployment to GitHub Pages.  [oai_citation:2‡GitHub](https://github.com/JahidulSany/portfolio-project)
+No JavaScript frameworks or build tools — this site is purposefully simple and lightweight for fast loading and easy deployment to GitHub Pages.
 
 ---
 
@@ -42,10 +42,10 @@ No JavaScript frameworks or build tools — this site is purposefully simple and
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/JahidulSany/portfolio-project.git
+	git clone https://github.com/JahidulSany/portfolio-project.git
 
-	2.	Open index.html
-	•	Simply open the file in your browser — no build tools needed.
+2. **Open index.html** <br>
+	Simply open the file in your browser — no build tools needed.
 
 ⸻
 
@@ -64,7 +64,7 @@ Each project includes a brief description, technology stack, and link to the liv
 Feel free to reach out if you’d like to connect or work together!
 
 📧 Email: jahidulsanypro@gmail.com
-📞 Phone: +44 7401 110 671
+
 🔗 Portfolio Live: https://jahidulsany.github.io/portfolio-project/  ￼
 
 ⸻
