@@ -100,9 +100,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -150,13 +147,13 @@ body {
 }
 
 .container {
-  margin: 100px 15px;
+  margin: 120px auto;
   padding: 0 15px;
 }
 
 .container-width {
   width: 1280px;
-  margin: 100px 15px;
+  margin: 120px auto;
   padding: 0 15px;
 }
 
@@ -170,6 +167,11 @@ body {
   color: var(--font-color);
   transition: all 0.3s ease-in;
   margin-right: 5px;
+  text-transform: capitalize;
+}
+
+.btn-button:hover {
+  background-color: var(--secondary-color);
 }
 
 .download-cv::before {
@@ -186,24 +188,23 @@ body {
   margin-right: 10px;
 }
 
-.btn-button:hover {
-  background-color: var(--secondary-color);
-}
-
 .section-header {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 800;
   color: var(--font-color);
+  margin: 50px 0;
 }
 
 /* Shared CSS Style End */
 
 /* Header Section Styles */
 .header-container {
+  border-radius: 10px;
   position: sticky;
-  margin: 50px 15px;
-  padding: 0 15px;
+  top: 0px;
+  padding: 20px 15px;
+  background-color: rgba(0, 0, 0, 0.09);
 }
 
 .header-content {
@@ -284,6 +285,104 @@ nav ul.navbar-menu li a:hover {
 }
 /* About Section Styles End */
 
+/* Projects Section */
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: white;
+  padding: 30px;
+  margin: 30px;
+  transition: all 0.3s ease-in;
+  border: 3px solid gray;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px 10px rgba(53, 49, 49, 0.2);
+}
+
+@keyframes one {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(30deg);
+  }
+}
+
+.project:hover {
+  transform: rotateX(20deg);
+  animation: one 2s infinite;
+  animation-direction: alternate;
+}
+
+.project-image img {
+  text-align: center;
+  width: 450px;
+  height: 250px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.project-title {
+  color: var(--font-color);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.project-desc {
+  max-width: 450px;
+}
+
+.project-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.project-techstack {
+  display: flex;
+  align-items: center;
+  margin: 20px 5px;
+}
+
+ul.project-techstack li {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--font-color);
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+ul.project-techstack li a {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  text-align: center;
+  color: var(--background-color);
+  margin: 8px auto;
+  transition: all 0.3s ease-in;
+}
+
+ul.project-techstack li a img {
+  width: 20px;
+}
+
+.live-demo {
+  color: var(--font-color);
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+}
+
+.live-demo:hover {
+  color: var(--secondary-color);
+}
+
+/* Projects Section Ends */
+
 /* Footer Section */
 .footer-container {
   margin: 50px 15px;
@@ -291,7 +390,6 @@ nav ul.navbar-menu li a:hover {
 }
 
 .footer-container p {
-    text-align: center;
-
+  text-align: center;
 }
 /* Footer Section End*/
